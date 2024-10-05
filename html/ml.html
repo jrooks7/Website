@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Classification</title>
+    <script src="../TS/ml.ts" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Interactive Image Classification</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Upload and Classify Your Image</h2>
+            <p>Upload a painting or an image, and our pre-trained model will classify it for you. You'll also see detailed insights into the classification process.</p>
+            <form id="imageUploadForm" enctype="multipart/form-data">
+                <label for="imageInput">Select an image:</label>
+                <input type="file" id="imageInput" name="image" accept="image/*" required>
+                <button type="button" id="classifyButton">Classify Image</button>
+            </form>
+            <div id="classificationResult" style="display:none;">
+                <h3>Classification Results</h3>
+                <div id="resultDetails"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Interactive Image Classification</p>
+    </footer>
+</body>
+</html>
