@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "ES2015",
+      "lib": ["DOM", "ES2015"],
+      "outDir": "./scripts",          // Output directory for compiled JavaScript
+      "rootDir": "./scripts",          // Input directory for TypeScript files
+      "strict": true
+    },
+    "include": [
+      "scripts/**/*.ts"               // Include all TypeScript files in the 'scripts' folder
+    ],
+    "exclude": [
+      "node_modules"                  // Exclude node_modules
+    ]
+  }
+  
